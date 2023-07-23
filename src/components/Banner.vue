@@ -6,9 +6,11 @@
     <div class="banner__content">
       <h1 class="banner__title">Perfume your day</h1>
       <p class="banner__desc">A perfume is like a piece of clothing, a message, a way of presenting oneself a costume that according to the person who wears it.</p>
-      <button class="banner__button" type="button">
-        Shop now
-      </button>
+      <router-link to="/perfume/productList">
+        <button class="banner__button" type="button">
+          Shop now
+        </button>
+      </router-link>
     </div>
   </div>
 </template>
