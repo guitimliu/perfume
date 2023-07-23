@@ -61,6 +61,12 @@
   &__logo img {
     width: 128px;
     height: 38px;
+    opacity: 1;
+    transition: opacity .3s;
+
+    &:hover {
+      opacity: 0.7;
+    }
   }
 
   &__nav {
