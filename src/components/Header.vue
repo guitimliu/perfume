@@ -9,9 +9,14 @@
     <div class="header__nav--mobile">
       <div class="header__nav--mobile__order">
         <span class="header__nav--mobile__order__notice">3</span>
-        <span style="display: block; width: 20px; height: 20px; background-color: #000;"></span>
+        <router-link class="header__nav--mobile__order__link" to="#">
+          <span class="material-icons">shopping_cart</span>
+        </router-link>
+        <!-- <span style="display: block; width: 20px; height: 20px; background-color: #000;"></span> -->
       </div>
-      <a class="header__nav--mobile__menu" href="#">Menu</a>
+      <router-link class="header__nav--mobile__menu" to="#">
+        <span class="material-icons">menu</span>
+      </router-link>
     </div>
     <ul class="header__nav--desktop">
       <li>
@@ -87,6 +92,12 @@
 
       &__order {
         position: relative;
+        opacity: 1;
+        transition: opacity .3s;
+
+        &:hover {
+          opacity: 0.7;
+        }
 
         &__notice {
           position: absolute;
@@ -100,6 +111,22 @@
           color: #fff;
           border-radius: 7px;
           font-size: 12px;
+        }
+
+        &__link {
+          text-decoration: none;
+          color: #8D8D8D;
+        }
+      }
+
+      &__menu {
+        text-decoration: none;
+        color: #8D8D8D;
+        opacity: 1;
+        transition: opacity .3s;
+
+        &:hover {
+          opacity: 0.7;
         }
       }
     }
