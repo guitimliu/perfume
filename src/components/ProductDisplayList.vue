@@ -6,21 +6,23 @@
     <div class="container">
       <ul class="productDisplayList__list">
         <li v-for="i in 3" :key="i" class="productDisplayList__item">
-          <img src="../assets/img/index6.jpg" alt="Poppy & Barley" class="productDisplayList__item__img">
-          <h2 class="productDisplayList__item__title">
-            Poppy & Barley
-          </h2>
-          <p class="productDisplayList__item__category">
-            Jo Malone
-          </p>
-          <div class="productDisplayList__item__price">
-            <p class="productDisplayList__item__price--actual">
-              NT$1,380
+          <router-link to="#" class="productDisplayList__link">
+            <img src="../assets/img/index6.jpg" alt="Poppy & Barley" class="productDisplayList__item__img">
+            <h2 class="productDisplayList__item__title">
+              Poppy & Barley
+            </h2>
+            <p class="productDisplayList__item__category">
+              Jo Malone
             </p>
-            <p class="productDisplayList__item__price--origin">
-              NT$1,580
-            </p>
-          </div>
+            <div class="productDisplayList__item__price">
+              <p class="productDisplayList__item__price--actual">
+                NT$1,380
+              </p>
+              <p class="productDisplayList__item__price--origin">
+                NT$1,580
+              </p>
+            </div>
+          </router-link>
         </li>
       </ul>
     </div>
@@ -48,6 +50,11 @@
   &__item {
     line-height: 1.5;
     margin-bottom: 32px;
+    transition: transform .3s;
+
+    &:hover {
+      transform: translateY(-10px);
+    }
 
     @media (min-width: 1024px) {
       padding: 40px 0;
@@ -91,6 +98,11 @@
         text-decoration: line-through;
       }
     }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #000;
   }
 }
 </style>
