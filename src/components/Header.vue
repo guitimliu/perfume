@@ -15,28 +15,28 @@
     </div>
     <ul class="header__nav--desktop">
       <li>
-        <a class="header__nav__link" href="/perfume/productList">
+        <router-link class="header__nav__link" to="/perfume/productList">
           <span class="material-icons">store</span>
           Product
-        </a>
+        </router-link>
       </li>
       <li>
-        <a class="header__nav__link" href="#">
+        <router-link class="header__nav__link" to="#">
           <span class="material-icons">person</span>
           log in
-        </a>
+        </router-link>
       </li>
       <li>
-        <a class="header__nav__link" href="#">
+        <router-link class="header__nav__link" to="#">
           <span class="material-icons">favorite</span>
           Wishlist
-        </a>
+        </router-link>
       </li>
       <li>
-        <a class="header__nav__link" href="#">
+        <router-link class="header__nav__link" to="#">
           <span class="material-icons">shopping_cart</span>
           Cart(3)
-        </a>
+        </router-link>
       </li>
     </ul>
   </div>
