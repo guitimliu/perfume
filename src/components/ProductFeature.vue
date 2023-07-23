@@ -148,15 +148,17 @@
       .productFeature__item {
         align-items: stretch;
 
-        &__img {
-          max-width: 555px;
-          height: 100%;
-          max-height: 100%;
-        }
-
         &__content {
           margin-top: 92px;
           margin-bottom: 92px;
+        }
+
+        @media (min-width: 1024px) {
+          &__img {
+            max-width: 555px;
+            height: 100%;
+            max-height: 100%;
+          }
         }
       }
     }
